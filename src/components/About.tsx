@@ -6,7 +6,7 @@ export default function About() {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="scroll-mt-32 max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">🙋 Sobre mí</h2>
           <p className="text-md md:text-lg text-white/90 leading-relaxed">
             Soy <strong>Andrés Camilo Solano</strong>, un apasionado desarrollador backend con enfoque en <strong>.NET y Azure</strong>. Me caracterizo por ser analítico, metódico y siempre orientado a encontrar soluciones eficientes y seguras.

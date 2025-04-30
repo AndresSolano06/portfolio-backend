@@ -2,7 +2,7 @@ export default function Contact() {
     return (
       <section
         id="contact"
-        className="w-full py-20 px-6 text-white font-grotesk bg-black/70 backdrop-blur-sm"
+        className="scroll-mt-32 w-full py-20 px-6 text-white font-grotesk bg-black/70 backdrop-blur-sm"
         data-aos="fade-up"
         data-aos-duration="1000"
       >

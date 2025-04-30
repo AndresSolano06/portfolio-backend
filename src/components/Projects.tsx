@@ -53,7 +53,7 @@ const Projects: React.FC = () => {
   return (
     <section
       id="projects"
-      className="w-full py-20 px-6 text-white font-grotesk bg-black/60 backdrop-blur-sm pt-24"
+      className="scroll-mt-32 w-full py-20 px-6 text-white font-grotesk bg-black/60 backdrop-blur-sm pt-24"
       data-aos="fade-up"
       data-aos-duration="1000"
     >
