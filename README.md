@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# 🧠 Portafolio Backend - Andrés Camilo Solano Pantoja
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portafolio de desarrollo backend. Este proyecto está construido con **React**, **Tailwind CSS** y una imagen que refleja mi esencia: una combinación de tecnología, naturaleza y tranquilidad.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías principales
 
-## Expanding the ESLint configuration
+- ⚛️ **React** – Librería para construir interfaces modernas
+- 🎨 **Tailwind CSS** – Framework de estilos utilitario para diseño rápido y consistente
+- 🌌 **Estética personalizada** – Inspirada en un estilo cyber-nature, con fondo visual propio
+- 🔗 **Próximamente**: Integración con API backend en `.NET` y despliegue en Azure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📷 Vista previa
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+> ![Fondo del portafolio](/assets/Background.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📁 Estructura del proyecto
+
+
+---
+
+## 👨‍💻 Autor
+
+**Andrés Camilo Solano Pantoja**  
+Desarrollador Backend apasionado por .NET, Azure, y soluciones limpias y funcionales.
+
+- 💼 [LinkedIn](https://linkedin.com/in/andrescamilo)
+- 📫 andres.solano.dev@gmail.com
+- 🌐 [Portafolio en construcción](https://andrescamilo.dev) *(próximamente)*
+
+---
+
+## 📌 Objetivos del portafolio
+
+- Mostrar proyectos backend reales
+- Documentar decisiones técnicas (arquitectura, seguridad, patrones)
+- Conectar con oportunidades profesionales
+
+---
+
+## 🛠️ En desarrollo
+
+- [ ] Sección “Sobre mí”
+- [ ] Sección de proyectos con detalles técnicos
+- [ ] Integración con API en `.NET`
+- [ ] Despliegue con CI/CD en Azure
+
+---
+
+> 💬 *“Entre la naturaleza y el código, también hay arte.”*
+

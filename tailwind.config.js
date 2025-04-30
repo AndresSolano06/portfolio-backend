@@ -6,8 +6,13 @@ export default {
   ],
   
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        grotesk: ['"Space Grotesk"', 'sans-serif'],
+      },
+    },
   },
+  
   plugins: [],
 }
 
