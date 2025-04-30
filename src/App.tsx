@@ -1,5 +1,10 @@
 import Projects from "./components/Projects";
 import { FaArrowRight } from "react-icons/fa6";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+
 
 export default function App() {
   const scrollToProjects = () => {
@@ -9,11 +14,10 @@ export default function App() {
 
   return (
     <div className="w-full min-h-screen font-grotesk text-white">
+      <Navbar />
+
       {/* Hero Section */}
-      <div
-        className="min-h-screen bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center text-center px-4 py-16"
-        style={{ backgroundImage: "url('/assets/Background.png')" }}
-      >
+      <div id="hero" className="min-h-screen w-full flex flex-col items-center justify-center text-center px-4 pt-20 pb-32">
         <div className="bg-black/60 p-6 rounded-lg">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Hola, soy Andrés Camilo
@@ -28,29 +32,66 @@ export default function App() {
           </p>
 
           {/* Icons */}
-          <div className="grid grid-cols-4 gap-8 mb-10">
-            <img src="/assets/icons/c-sharp.svg" alt="C#" className="w-20 h-20 mx-auto" />
-            <img src="/assets/icons/azure.svg" alt="Azure" className="w-20 h-20 mx-auto" />
-            <img src="/assets/icons/devops.svg" alt="DevOps" className="w-20 h-20 mx-auto" />
-            <img src="/assets/icons/aws.svg" alt="AWS" className="w-20 h-20 mx-auto" />
-            <img src="/assets/icons/java.svg" alt="JAVA" className="w-20 h-20 mx-auto" />
-            <img src="/assets/icons/python.svg" alt="Python" className="w-20 h-20 mx-auto" />
-            <img src="/assets/icons/github.svg" alt="GitHub" className="w-20 h-20 mx-auto" />
-            <img src="/assets/icons/sqlserver.svg" alt="SQL Server" className="w-20 h-20 mx-auto" />
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-6 mb-10">
+            <img
+              src="/assets/icons/c-sharp.svg"
+              alt="C#"
+              className="w-16 h-16 object-contain mx-auto transition-transform transform hover:scale-150 duration-300"
+            />
+            <img
+              src="/assets/icons/azure.svg"
+              alt="Azure"
+              className="w-16 h-16 object-contain mx-auto transition-transform transform hover:scale-150 duration-300"
+            />
+            <img
+              src="/assets/icons/devops.svg"
+              alt="DevOps"
+              className="w-16 h-16 object-contain mx-auto transition-transform transform hover:scale-150 duration-300"
+            />
+            <img
+              src="/assets/icons/aws.svg"
+              alt="AWS"
+              className="w-16 h-16 object-contain mx-auto transition-transform transform hover:scale-150 duration-300"
+            />
+            <img
+              src="/assets/icons/java.svg"
+              alt="JAVA"
+              className="w-16 h-16 object-contain mx-auto transition-transform transform hover:scale-150 duration-300"
+            />
+            <img
+              src="/assets/icons/sqlserver.svg"
+              alt="SQL Server"
+              className="w-16 h-16 object-contain mx-auto transition-transform transform hover:scale-150 duration-300"
+            />
+            <img
+              src="/assets/icons/github.svg"
+              alt="GitHub"
+              className="w-16 h-16 object-contain mx-auto transition-transform transform hover:scale-150 duration-300"
+            />
+            <img
+              src="/assets/icons/python.svg"
+              alt="Python"
+              className="w-16 h-16 object-contain mx-auto transition-transform transform hover:scale-150 duration-300"
+            />
           </div>
 
           {/* Button */}
           <button
             onClick={scrollToProjects}
-            className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-full flex items-center gap-2 transition duration-300"
+            className="bg-purple-600 hover:bg-purple-800 text-white font-semibold py-3 px-6 rounded-full flex items-center gap-2 transition duration-300"
           >
             Ver Proyectos <FaArrowRight />
           </button>
         </div>
       </div>
-
       {/* Projects Section */}
       <Projects />
+      {/* Sobre mi Section */}
+      <About />
+      {/* Contacto Section */}
+      <Contact />
+      {/* Footer Section */}
+      <Footer />
     </div>
   );
 }
