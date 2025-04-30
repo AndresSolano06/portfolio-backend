@@ -41,12 +41,3 @@
   color: #888;
 }
 
-body {
-  background-image: url('./assets/background.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  min-height: 100vh;
-}
