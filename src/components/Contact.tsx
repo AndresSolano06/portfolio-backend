@@ -14,14 +14,16 @@ export default function Contact() {
           method="POST"
           className="flex flex-col gap-6"
         >
-          {/* Evita spam */}
-          <input type="hidden" name="_captcha" value="false" />
+          {/* Redirección después de enviar */}
           <input
             type="hidden"
             name="_next"
             value="https://portfolio-backend-lake-seven.vercel.app/thanks.html"
           />
+          {/* Evita captcha automático */}
+          <input type="hidden" name="_captcha" value="false" />
 
+          {/* Campos del formulario */}
           <input
             type="text"
             name="name"
