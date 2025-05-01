@@ -17,7 +17,7 @@ Bienvenido a mi portafolio de desarrollo backend. Este proyecto fue construido c
 
 ## 📷 Vista previa
 
-> ![Fondo del portafolio](/assets/Background.png)
+> ![Fondo del portafolio](public/assets/Background.png)
 
 ---
 
