@@ -4,19 +4,12 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-import Thanks from "./components/Thanks";
 
 export default function App() {
   const scrollToProjects = () => {
     const section = document.getElementById("projects");
     section?.scrollIntoView({ behavior: "smooth" });
   };
-
-  const isThanksPage = window.location.pathname.includes("thanks");
-
-  if (isThanksPage) {
-    return <Thanks />;
-  }
 
   return (
     <div className="w-full min-h-screen font-grotesk text-white">

@@ -19,7 +19,7 @@ export default function Contact() {
           <input
             type="hidden"
             name="_next"
-            value="https://portfolio-backend-lake-seven.vercel.app/thanks"
+            value="https://portfolio-backend-lake-seven.vercel.app/thanks.html"
           />
 
           <input
