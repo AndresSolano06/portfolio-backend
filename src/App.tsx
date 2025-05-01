@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-
+import Thanks from "./components/Thanks";
 
 export default function App() {
   const scrollToProjects = () => {
@@ -12,12 +12,21 @@ export default function App() {
     section?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const isThanksPage = window.location.pathname.includes("thanks");
+
+  if (isThanksPage) {
+    return <Thanks />;
+  }
+
   return (
     <div className="w-full min-h-screen font-grotesk text-white">
       <Navbar />
 
       {/* Hero Section */}
-      <div id="hero" className="scroll-mt-32 min-h-screen w-full flex flex-col items-center justify-center text-center px-4 pt-20 pb-32">
+      <div
+        id="hero"
+        className="scroll-mt-32 min-h-screen w-full flex flex-col items-center justify-center text-center px-4 pt-20 pb-32"
+      >
         <div className="bg-black/60 p-6 rounded-lg">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Hola, soy Andrés Camilo
@@ -84,9 +93,10 @@ export default function App() {
           </button>
         </div>
       </div>
+
       {/* Projects Section */}
       <Projects />
-      {/* Sobre mi Section */}
+      {/* Sobre mí Section */}
       <About />
       {/* Contacto Section */}
       <Contact />

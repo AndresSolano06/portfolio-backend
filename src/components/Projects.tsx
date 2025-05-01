@@ -53,17 +53,23 @@ const Projects: React.FC = () => {
   return (
     <section
       id="projects"
-      className="scroll-mt-32 w-full py-20 px-6 text-white font-grotesk bg-black/60 backdrop-blur-sm pt-24"
+      className="scroll-mt-32 w-full min-h-screen py-20 px-6 text-white font-grotesk bg-black/60 backdrop-blur-sm pt-24"
       data-aos="fade-up"
       data-aos-duration="1000"
     >
-      <h2 className="text-3xl font-bold text-center mb-12">🚀 Proyectos destacados</h2>
+      <h2 className="text-3xl font-bold text-center mb-12">
+        🚀 Proyectos destacados
+      </h2>
 
       <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         {projects.map((project, index) => {
           const Wrapper = project.repoUrl ? motion.a : motion.div;
           const props = project.repoUrl
-            ? { href: project.repoUrl, target: "_blank", rel: "noopener noreferrer" }
+            ? {
+                href: project.repoUrl,
+                target: "_blank",
+                rel: "noopener noreferrer",
+              }
             : {};
 
           return (
@@ -80,7 +86,9 @@ const Projects: React.FC = () => {
                 {project.title}
               </h3>
 
-              <p className="text-sm text-neutral-300 mb-4">{project.description}</p>
+              <p className="text-sm text-neutral-300 mb-4">
+                {project.description}
+              </p>
 
               <div className="flex flex-wrap gap-2 text-xs">
                 {project.tags?.map((tag, i) => (
