@@ -14,14 +14,17 @@ export default function Contact() {
           method="POST"
           className="flex flex-col gap-6"
         >
-          {/* Redirección después de enviar */}
+          {/* Redirección personalizada al enviar */}
           <input
             type="hidden"
             name="_redirect"
             value="https://portfolio-backend-lake-seven.vercel.app/thanks.html"
           />
 
-          {/* Campos del formulario */}
+          {/* Campo honeypot oculto para evitar spam */}
+          <input type="text" name="bot-field" className="hidden" />
+
+          {/* Campos visibles */}
           <input
             type="text"
             name="name"
