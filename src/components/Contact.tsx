@@ -10,18 +10,16 @@ export default function Contact() {
         <h2 className="text-3xl font-bold text-center mb-10">📬 Contáctame</h2>
 
         <form
-          action="https://formsubmit.co/andresolano.12.651@gmail.com"
+          action="https://formcarry.com/s/ObrcDaNMYEn"
           method="POST"
           className="flex flex-col gap-6"
         >
           {/* Redirección después de enviar */}
           <input
             type="hidden"
-            name="_next"
+            name="_redirect"
             value="https://portfolio-backend-lake-seven.vercel.app/thanks.html"
           />
-          {/* Evita captcha automático */}
-          <input type="hidden" name="_captcha" value="false" />
 
           {/* Campos del formulario */}
           <input
