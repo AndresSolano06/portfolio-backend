@@ -10,21 +10,21 @@ export default function Contact() {
         <h2 className="text-3xl font-bold text-center mb-10">📬 Contáctame</h2>
 
         <form
-          action="https://formcarry.com/s/ObrcDaNMYEn"
+          action="https://getform.io/f/aqokrena"
           method="POST"
           className="flex flex-col gap-6"
         >
-          {/* Redirección personalizada al enviar */}
+          {/* Redirección al enviar */}
           <input
             type="hidden"
             name="_redirect"
             value="https://portfolio-backend-lake-seven.vercel.app/thanks.html"
           />
 
-          {/* Campo honeypot oculto para evitar spam */}
-          <input type="text" name="bot-field" className="hidden" />
+          {/* Honeypot anti-spam */}
+          <input type="hidden" name="_gotcha" style={{ display: "none" }} />
 
-          {/* Campos visibles */}
+          {/* Campos del formulario */}
           <input
             type="text"
             name="name"
