@@ -27,7 +27,7 @@ Bienvenido a mi portafolio de desarrollo backend. Este proyecto fue construido c
 /public
   /assets         → Imágenes, íconos y logos
 /src
-  /components     → Secciones como Navbar, About, Contact, Projects
+  /components     → Secciones como Navbar, About, Projects
   /data           → Información estática
   App.tsx         → Entrada principal
   index.tsx       → Render de React

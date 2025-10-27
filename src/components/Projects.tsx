@@ -24,6 +24,12 @@ const projects: Project[] = [
     tags: [".NET", "API REST", "JWT"],
   },
   {
+    title: "Bases para grupo I+D+i",
+    description:
+      "Formación y liderazgo del equipo I+D+i en Similtech con planes semestrales de innovación.",
+    tags: ["Gestión", "Innovación", "Planificación"],
+  },
+  {
     title: "PQRS Tuboleta",
     description:
       "Migración de backend de PHP a C#, microservicios y despliegue en Azure y AWS.",
@@ -41,24 +47,18 @@ const projects: Project[] = [
       "Asistente de IA por voz usando Python, OpenAI API, Docker y Azure.",
     tags: ["Python", "OpenAI", "Docker", "Azure"],
   },
-  {
-    title: "Bases para grupo I+D+i",
-    description:
-      "Formación y liderazgo del equipo I+D+i en Similtech con planes semestrales de innovación.",
-    tags: ["Gestión", "Innovación", "Planificación"],
-  },
 ];
 
 const Projects: React.FC = () => {
   return (
     <section
       id="projects"
-      className="scroll-mt-32 w-full min-h-screen py-20 px-6 text-white font-grotesk bg-black/60 backdrop-blur-sm pt-24"
-      data-aos="fade-up"
-      data-aos-duration="1000"
+      className="scroll-mt-32 w-full  py-10 px-6 text-white font-grotesk"
+      // data-aos="fade-up"
+      // data-aos-duration="1000"
     >
-      <h2 className="text-3xl font-bold text-center mb-12">
-        🚀 Proyectos destacados
+      <h2 className="text-3xl font-bold text-center mb-12 text-[#646cff]">
+        🚀 Proyectos destacados y experiencia
       </h2>
 
       <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
@@ -82,7 +82,7 @@ const Projects: React.FC = () => {
               viewport={{ once: true }}
               className="bg-neutral-900 hover:bg-neutral-800 transition-all rounded-xl border border-neutral-700 p-6 shadow-md group"
             >
-              <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-400 transition">
+              <h3 className="text-xl font-semibold mb-2 text-[rgba(199,175,235,1)] group-hover:text-[rgba(182,127,238,1)] transition-colors duration-300">
                 {project.title}
               </h3>
 

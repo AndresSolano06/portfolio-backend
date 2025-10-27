@@ -3,7 +3,6 @@ import { FaArrowRight } from "react-icons/fa6";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
 
 export default function App() {
   const scrollToProjects = () => {
@@ -12,7 +11,7 @@ export default function App() {
   };
 
   return (
-    <div className="w-full min-h-screen font-grotesk text-white">
+    <div className="w-full font-grotesk text-white">
       <Navbar />
 
       {/* Hero Section */}
@@ -80,7 +79,7 @@ export default function App() {
           {/* Button */}
           <button
             onClick={scrollToProjects}
-            className="bg-purple-600 hover:bg-purple-800 text-white font-semibold py-3 px-6 rounded-full flex items-center gap-2 transition duration-300"
+            className="bg-[rgba(199,175,235,1)] hover:bg-[rgba(182,127,238,1)] text-white font-semibold py-3 px-6 rounded-full flex items-center gap-2 transition duration-300 shadow-md hover:shadow-lg"
           >
             Ver Proyectos <FaArrowRight />
           </button>
@@ -91,8 +90,6 @@ export default function App() {
       <Projects />
       {/* Sobre mí Section */}
       <About />
-      {/* Contacto Section */}
-      <Contact />
       {/* Footer Section */}
       <Footer />
     </div>

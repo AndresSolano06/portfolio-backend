@@ -6,7 +6,6 @@ const links = [
   { name: "Inicio", href: "#hero" },
   { name: "Proyectos", href: "#projects" },
   { name: "Sobre mí", href: "#about" },
-  { name: "Contacto", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -17,12 +16,12 @@ export default function Navbar() {
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur border-b border-neutral-700 text-white font-grotesk h-20"
+      className="fixed top-0 w-full z-50 backdrop-blur border-neutral-700 text-white font-grotesk h-20"
     >
       <div className="max-w-screen-2xl mx-auto px-6 h-full relative flex items-center justify-between md:justify-normal">
         {/* Botón hamburguesa en mobile */}
         <button
-          className="md:hidden z-50"
+          className="md:hidden z-50 text-[#646cff]"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
@@ -30,8 +29,12 @@ export default function Navbar() {
 
         {/* Nombre centrado solo en mobile */}
         <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-center leading-none md:hidden pointer-events-none">
-          <span className="block text-white text-base font-bold">Andrés</span>
-          <span className="block text-purple-400 text-base font-bold">Solano</span>
+          <span className="block text-[#646cff] text-base font-bold">
+            Andrés
+          </span>
+          <span className="block text-purple-400 text-base font-bold">
+            Solano
+          </span>
         </div>
 
         {/* Logo solo en mobile a la derecha */}
@@ -56,8 +59,10 @@ export default function Navbar() {
             </div>
           </div>
           <div className="leading-none">
-            <span className="block text-white text-base font-bold">Andrés</span>
-            <span className="block text-purple-400 text-base font-bold ml-12">
+            <span className="block text-[#646cff] text-base font-bold">
+              Andrés
+            </span>
+            <span className="block text-[#646cff] text-base font-bold ml-12">
               Solano
             </span>
           </div>
