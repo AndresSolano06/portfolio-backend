@@ -80,7 +80,7 @@ const Projects: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-neutral-900 hover:bg-neutral-800 transition-all rounded-xl border border-neutral-700 p-6 shadow-md group"
+              className="bg-black/70 hover:bg-black/60 transition-all rounded-xl border border-neutral-700 p-6 shadow-md group"
             >
               <h3 className="text-xl font-semibold mb-2 text-[rgba(199,175,235,1)] group-hover:text-[rgba(182,127,238,1)] transition-colors duration-300">
                 {project.title}

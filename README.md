@@ -13,11 +13,6 @@ Bienvenido a mi portafolio de desarrollo backend. Este proyecto fue construido c
 - 💬 **FormSubmit** – Envío de formularios sin backend
 - 🌐 **Vercel** – Despliegue rápido y gratuito
 
----
-
-## 📷 Vista previa
-
-> ![Fondo del portafolio](public/assets/Background.png)
 
 ---
 

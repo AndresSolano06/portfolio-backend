@@ -19,7 +19,7 @@ export default function App() {
         id="hero"
         className="scroll-mt-32 min-h-screen w-full flex flex-col items-center justify-center text-center px-4 pt-20 pb-32"
       >
-        <div className="bg-black/60 p-6 rounded-lg">
+        <div className="bg-black/70 p-6 rounded-lg"> 
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Hola, soy Andrés Camilo
           </h1>
